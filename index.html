@@ -1,0 +1,30 @@
+<h1>Unix Programs</h1>
+
+<ul id="fileList">
+    <li><button onclick="downloadFile('./prog1/prog1.c')">Prog1.c</button></li>
+    <li><button onclick="downloadFile('./prog2/prog2a.c')">Prog2a.c</button></li>
+    <li><button onclick="downloadFile('./prog2/prog2b.c')">Prog2b.c</button></li>
+    <li><button onclick="downloadFile('./prog3/prog3a.c')">Prog3a.c</button></li>
+    <li><button onclick="downloadFile('./prog3/prog3b.c')">Prog3b.c</button></li>
+    <li><button onclick="downloadFile('./prog4/prog4.c')">Prog4.c</button></li>
+    <li><button onclick="downloadFile('./prog5/prog5a.c')">Prog5a.c</button></li>
+    <li><button onclick="downloadFile('./prog5/prog5b.c')">Prog5b.c</button></li>
+    <li><button onclick="downloadFile('./prog6/prog6.c')">Prog6.c</button></li>
+    <li><button onclick="downloadFile('./prog7/prog7.c')">Prog7.c</button></li>
+    <li><button onclick="downloadFile('./prog8/prog8a.c')">Prog8a.c</button></li>
+    <li><button onclick="downloadFile('./prog8/prog8b.c')">Prog8b.c</button></li>
+    <li><button onclick="downloadFile('./prog9/prog9.c')">Prog9.c</button></li>
+    <li><button onclick="downloadFile('./prog11/prog11or.c')">Prog11a.c</button></li>
+    <li><button onclick="downloadFile('./prog11/prog11bor.c')">Prog11b.c</button></li>
+    <li><button onclick="downloadFile('./prog12/small/client.c')">client</button></li>
+    <li><button onclick="downloadFile('./prog12/small/server.c')">server</button></li>
+</ul>
+
+<script>
+function downloadFile(filename) {
+    const anchor = document.createElement('a');
+    anchor.href = filename;
+    anchor.download = filename;
+    anchor.click();
+}
+</script>
